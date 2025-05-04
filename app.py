@@ -7,7 +7,7 @@ import requests
 app = Flask(__name__)
 
 # Google Apps Script webhook URL (set your actual one here)
-APPS_SCRIPT_WEBHOOK = 'https://script.google.com/macros/s/AKfycbwIlAHfnw-zMO1KGjbKuM5OQccQsXtVXmS89SFk1IPO6xhCXT_8Ki7qZmiVmZVlQ/exec'
+APPS_SCRIPT_WEBHOOK = 'https://script.google.com/macros/s/AKfycbwIlAHfnw-zMO1KGjbKuM5OQccQsXtVXmS89SFkl3Mdn1IPO6xhCXT_8Ki7qZmiVmZVlQ/exec'
 
 @app.route("/run-pytrends", methods=["GET"])
 def run_pytrends():
