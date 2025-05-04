@@ -1,0 +1,5 @@
+flask
+pytrends
+pandas
+requests
+gunicorn
