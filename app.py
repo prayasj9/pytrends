@@ -13,7 +13,7 @@ APPS_SCRIPT_WEBHOOK = 'https://script.google.com/macros/s/AKfycbwIlAHfnw-zMO1KGj
 def run_pytrends():
     try:
         # Run pytrends
-        pytrends = TrendReq()
+        pytrends = TrendReq(retries=3)
         pytrends.build_payload(['sunscreen'], timeframe='today 12-m')
         df = pytrends.interest_over_time().reset_index()
 
